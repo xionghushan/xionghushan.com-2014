@@ -10,42 +10,51 @@ title: 投资与回报
         <div class="container content">
             <div class="row">
 			 <p style="font-size:12px"><img src="{{ site.url }}/images/breadericon.jpg" alt="面包屑导航"><a href="{{ site.url }}">首页</a>&raquo;招商加盟&raquo;<a href="{{ site.url }}/return/">投资与回报</a></p><hr>
-                <div class="showroom-item col-sm-3">
-                    <div class="image">
-                        <img src="/images/products/xc232-33.jpg" class="img-responsive" alt="XC232-33玫瑰金">
-                        <a class="overlay">
-                             <div class="name">XC232-33玫瑰金</div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="showroom-item col-sm-3">
-                    <div class="image">
-                        <img src="/images/products/xc210-55.jpg" class="img-responsive" alt="XC210-55玫瑰金">
-                        <a class="overlay">
-                             <div class="name">XC210-55玫瑰金</div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="showroom-item col-sm-3">
-                    <div class="image">
-                        <img src="/images/products/xc222-20.jpg" class="img-responsive" alt="XC222-20玫瑰金">
-                        <a class="overlay">
-                             <div class="name">XC222-20玫瑰金</div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="showroom-item col-sm-3">
-                    <div class="image">
-                        <img src="/images/products/xc224-33.jpg" class="img-responsive" alt="XC224-33玫瑰金">
-                        <a class="overlay">
-                             <div class="name">XC224-33玫瑰金</div>
-                        </a>
-                    </div>
-                </div>  
-			</div>
+            </div>
+               <div class="xpanel">
+            <div class="panel pageTop">
+              <h3>第一步：加盟咨询与申请</h3>
+              <p>通过官网、电话、传真或Email等方式向总部咨询加盟事项，索取有关资料，全面了解熊虎山五金，公司总部将派有经验的业务经理与您联系；如有意愿则填写加盟申请，确定您的加盟意向。</p>
+            </div>
+            <div class="panel pageTop">
+              <h3>第二步：实地考察与合作洽谈</h3>
+              <p>持有效证件来总部实地考察参观，并进一步磋商合作意向及市场拓展计划，同时双方达成日后合作开发市场的目标及阶段性计划。</p>
+            </div>
+            <div class="panel pageTop">
+              <h3>第三步：签订合同</h3>
+              <p>双方确认，正式签订加盟合同，并就形象店装修方案或者专柜专区装修交换意见。</p>
+            </div>
+            <div class="panel pageTop">
+              <h3>第四步：业务培训</h3>
+              <p>加盟商来总部接受培训（产品知识、售后服务、市场推广）。</p>
+            </div>
+            <div class="panel pageTop">
+              <h3>第五步：实施销售</h3>
+              <p>加盟商开业后，总部将委派专业的客服及区域经理负责对加盟商传授实时销售技巧，帮助销售业绩的提升。</p>
+            </div>
+            <div class="panel pageTop">
+              <h3>第六步：信息反馈</h3>
+              <p>加强双方的信息交流，解决在销售过程中疑难问题，帮助加盟商进一步提升业绩，增强市场地位。与此同时不间断反馈公司的新产品动向和市场发展趋势信息，而加盟商也应积极主动把市场前沿信息反馈至总部。</p>
+            </div>
+          </div>
+          <script>
+            if (1) {
+              $(".pageTop").css({
+                opacity: 0
+              }).each(function(i) {
+                var val = i * 200 + 'ms';
+                $(this).css({
+                  '-webkit-animation-delay': val,
+                  '-moz-animation-delay': val,
+                  '-o-animation-delay': val,
+                  'animation-delay': val
+                });
+              });
+              $(function() {
+                $(".pageTop").addClass("play");
+              });
+            }
+          </script>
             <div class="clearfix"></div>
         </div>
     </div>
