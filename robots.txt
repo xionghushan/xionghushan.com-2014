@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Disallow: /fonts/
+Disallow: /favicon.ico
+
+Sitemap: http://www.xionghushan.com/Sitemap.xml

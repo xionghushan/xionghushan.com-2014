@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="/css/vendor/bootstrap/bootstrap.css">
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="/css/vendor/glyphicons/glyphicons.css">
+    <link rel="stylesheet" href="/css/vendor/glyphicons/filetypes.css">
+    <link rel="stylesheet" href="/css/vendor/glyphicons/social.css">
+    <link rel="stylesheet" href="/css/mfp.css">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- LayerSlider styles -->
+    <link rel="stylesheet" href="/css/vendor/layerslider/layerslider.css" type="text/css">
+
+    <link rel="stylesheet" href="/css/styles-blue.css" id="grove-styles">
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">
+        <script src="js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+
+    <script src="/js/vendor/jquery/jquery-1.9.1.min.js"></script>
+    <!-- jQuery with jQuery Easing, and jQuery Transit JS -->
+
+    <!-- LayerSlider from Kreatura Media with Transitions -->
+    <script src="/js/vendor/layerslider/greensock.js" type="text/javascript"></script>
+    <script src="/js/vendor/layerslider/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/js/vendor/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+    <!-- Grove Layerslider initiation script -->
+    <script src="{{ site.url }}/js/grove-slider.js" type="text/javascript"></script>
+
+    <script src="/js/vendor/magnific-popup.min.js" type="text/javascript"></script>
+
+    <!-- Additional script -->
+    <script src="/js/add.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default grove-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="grove-toggle" data-toggle="collapse" data-target=".grove-nav">   <i class="glyphicons show_lines"></i>  </a>
+                    <a href="{{ site.url }}" class="navbar-brand"><img src="/images/xionghushan-logo.png" alt="熊虎山五金"></a>
+                </div>
+
+                <div class="collapse navbar-collapse grove-nav">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="{{ site.url }}"><b>首页</b></a>
+                        </li>
+                        <li class="dropdown hover-dropdown">
+                            <a href="#" data-toggle="dropdown"><b>关于熊虎山</b><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ site.url }}/about/"><b>企业简介</b></a></li>
+                                <li><a href="{{ site.url }}/history/"><b>企业历史</b></a></li>
+                                <li><a href="{{ site.url }}/culture/"><b>企业文化</b></a></li>
+                                <li><a href="{{ site.url }}/honors/"><b>企业荣誉</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hover-dropdown">
+                            <a href="#" data-toggle="dropdown"><b>产品中心</b><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ site.url }}/lock/"><b>门锁配套五金</b></a></li>
+                                <li><a href="{{ site.url }}/furniture/"><b>家具五金</b></a></li>
+                                <li><a href="{{ site.url }}/gated/"><b>门控五金</b></a></li>
+                                <li><a href="{{ site.url }}/bathroom/"><b>卫浴五金</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hover-dropdown">
+                            <a href="#" data-toggle="dropdown"><b>招商加盟</b><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ site.url }}/process/"><b>加盟流程</b></a></li>
+                                <li><a href="{{ site.url }}/qualifications/"><b>加盟条件</b></a></li>
+                                <li><a href="{{ site.url }}/return/"><b>投资与回报</b></a></li>
+                                <li><a href="{{ site.url }}/stores/"><b>加盟店展示</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hover-dropdown">
+                            <a href="#" data-toggle="dropdown"><b>工程咨询</b><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ site.url }}/family/"><b>家装案例</b></a></li>
+                                <li><a href="{{ site.url }}/engineering/"><b>工装案例</b></a></li>
+                                <li><a href="{{ site.url }}/enquiry/"><b>工程询价</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hover-dropdown">
+                            <a href="#" data-toggle="dropdown"><b>服务与支持</b><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ site.url }}/service/"><b>售后服务</b></a></li>
+                                <li><a href="{{ site.url }}/manual/"><b>产品说明书</b></a></li>
+                                <li><a href="{{ site.url }}/knowledge/"><b>产品知识</b></a></li>
+                                <li><a href="{{ site.url }}/maintenance/"><b>产品保养</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hover-dropdown">
+                            <a href="#" data-toggle="dropdown"><b>新闻资讯</b><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ site.url }}/project-news/"><b>专题资讯</b></a></li>
+                                <li><a href="{{ site.url }}/renovation-news/"><b>装修百科</b></a></li>
+                                <li><a href="{{ site.url }}/fengshui-news/"><b>家居风水</b></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hover-dropdown">
+                            <a href="{{ site.url }}/contact/"><b>联系我们</b></a>
+                         </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </header>
+    {{ content }}
+    <footer class="widewrapper footer">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-sm-3">
+                    <div class="indent30">
+                    <h4><b>招商加盟</b></h4>
+                    <ul class="grove-list">
+                        <li><a href="{{ site.url }}/process/"><b>加盟流程</b></a></li>
+                        <li><a href="{{ site.url }}/qualifications/"><b>加盟条件</b></a></li>
+                        <li><a href="{{ site.url }}/return/"><b>投资与回报</b></a></li>
+                        <li><a href="{{ site.url }}/stores/"><b>加盟店展示</b></a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="indent30">
+                    <h4><b>产品中心</b></h4>
+                    <ul class="grove-list">
+                        <li><a href="{{ site.url }}/lock/"><b>门锁配套五金</b></a></li>
+                        <li><a href="{{ site.url }}/furniture/"><b>家具五金</b></a></li>
+                        <li><a href="{{ site.url }}/gated/"><b>门控五金</b></a></li>
+                        <li><a href="{{ site.url }}/bathroom/"><b>卫浴五金</b></a></li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="indent30">
+                    <h4><b>联系方式</b></h4>
+                    <ul class="grove-list">
+                        <li><b>招商财富热线：4006-020-198</b></li>
+                        <li><b>质量监督热线：0757-29265775</b></li>
+                        <li><b>电话1线：0757-29265935</b></li>
+                        <li><b>电话2线：0757-29265915</b></li>
+                        <li><b>传真：0757-29265237</b></li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4><b>第三方平台</b></h4>
+                    <a href="/images/weixin.png" title="扫描QR码关注官方微信账号" class="sbutton"><img src="{{ site.url }}/images/home/iocn-weixin.png" alt="微信"></a>
+                    <a href="http://weibo.com/xionghushan" target="_blank"><img src="{{ site.url }}/images/home/iocn-weibo.png" alt="微博"></a>
+                    <a href="http://shop1393381764998.1688.com/" target="_blank"><img src="{{ site.url }}/images/home/iocn-1688.png" alt="阿里巴巴"></a>
+                    <a href="http://xionghushan.taobao.com/" target="_blank"><img src="{{ site.url }}/images/home/iocn-taobao.png" alt="淘宝"></a>
+                    <a href="http://xionghushan168.b2b.hc360.com/" target="_blank"><img src="{{ site.url }}/images/home/iocn-hc360.png" alt="慧聪"></a>
+                    <a><img src="{{ site.url }}/images/home/iocn-check.png" alt="防伪查询"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                <p>© 1990-2014 佛山市顺德区熊虎山五金实业有限公司 <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备11062274号-1</a></p>
+                <p>网站建设与维护：<a href="http://www.8html.com/" target="_blank">8HTML</a> <a href="{{ site.url }}/law/">法律声明</a> <a href="{{ site.url }}/Sitemap.xml" target="_blank">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/vendor/modernizr/modernizr.js"></script>
+</body>
+</html>

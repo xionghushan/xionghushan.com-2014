@@ -1,0 +1,14 @@
+url: http://www.xionghushan.com
+
+title: 熊虎山五金
+
+keywords: 熊虎山五金
+
+description: 熊虎山五金
+
+permalink: /products/:title.html
+
+relative_permalinks: false
+
+exclude:
+  - README.md
