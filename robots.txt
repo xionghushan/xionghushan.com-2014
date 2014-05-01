@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /css/
 Disallow: /js/
 Disallow: /images/
+Disallow: /img/
 Disallow: /fonts/
 Disallow: /favicon.ico
 
