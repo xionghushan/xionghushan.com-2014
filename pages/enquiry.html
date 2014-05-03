@@ -6,21 +6,21 @@ type: 工程咨询
 title: 工程询价
 ---
 {% include header.html %}
-        <div class="col-sm-6">
+        <div class="col-sm-12">
           <form action="http://www.8html.com:2425/xionghushan.php" method="POST" id="sform">
-            <p>意向产品：
+            <p>意向产品：<br>
               <textarea name="products" cols="80" rows="6"></textarea>
             </p>
             <p>联系人：
               <input type="text" class="person" name="firstname">
             </p>
-            <p>位置：
-              <span id="district_selector"></span>
+            <p>联系电话：
+              <input type="text" class="phone" name="telephone">
             </p>
             <p>联系地址：
-              <input type="text" class="phone" name="address">
+              <div><span id="district_selector"></span> <input type="text" class="address" name="address"></div>
             </p>
-            <p>备注：
+            <p>备注：<br>
               <textarea name="comments" cols="80" rows="6"></textarea>
             </p>
             <p>
